@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+	html {
+		box-sizing: border-box;
+	}
+
+	body { 
+		background-color: #d5e1ef;
+		font-family: "Roboto", serif; 
+	}
+	/* Card Styling */
+	.qr-card {
+		width: 90%;
+		margin: 0 auto;
+		background-color: #ffffff;
+		border-radius: 20px;
+		margin-top: 150px;
+	}
+
+	/* QR Code Image Styling */
+	.qr-card #qr-code {
+		width:90%;
+		display: block;
+		margin: 0 auto;
+		padding: 12px;
+		border-radius: 20px;
+	}
+
+	/* Text Styling */
+	.qr-card h1 {
+		text-align: center;
+		color: #2b3244;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 1.1rem;
+		line-height: 25px;
+	}
+
+	.qr-card p {
+		text-align: center;
+		color: #a5a6aa;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 0.8rem;
+		line-height: 18px;
+		padding-bottom: 25px;
+	}
+
+	/* Credits Styling */
+	.credits { 
+		font-size: 11px; text-align: center;
+		margin-top: 50px; 
+	}
+	.credits a { 
+		color: hsl(228, 45%, 44%); 
+	}
+
+	/*Media Query for Larger Screens */
+	@media (min-width: 500px) {
+		.qr-card {
+			width: 250px;
+			margin-top:200px;
+		}
+		.qr-card #qr-code {
+			padding: 8px;
+		}
+	}
+  </style>
+</head>
+<body>
+	<div class="qr-card">
+		<img src="images/image-qr-code.png" alt="qr code image" id="qr-code">
+		<h1>Improve your front-end skills by building projects</h1>
+  		<p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+	</div>
+  	
+	<div class="credits">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend 			Mentor</a>. Coded by <a href="#">Lexi Crotts</a>.
+  	</div>
+</body>
+</html>
